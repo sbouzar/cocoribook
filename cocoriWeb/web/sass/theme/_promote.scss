@@ -1,0 +1,84 @@
+.promote-media {
+    overflow: hidden;
+    padding: 3em;
+    width: 30%;
+    img {
+        border-radius: .3em;
+        @include box-shadow(-.1em -.1em 1em rgba(0,0,0,.5));
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.promote-body {
+    float: left;
+    padding: 3em 3em 4em 0;
+    &.imaged{
+        width: 70%;
+    }
+}
+
+.promote-heading,
+.promote-subheading{
+    font-weight: 300;
+}
+
+.promote-subheading {
+    font-size: $font-size-h3;
+}
+
+.promote-price {
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.promote-author {
+    color: $gray-light;
+    font-size: $font-size-small;
+    a + a::before {
+        content: ', ';
+    }
+}
+
+.carousel-control {
+    background-image: none!important;
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .promote-body {
+        padding-top: 2em;
+    }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .promote-media {
+        width: 40%;
+    }
+    .promote-body {
+        font-size: .9em;
+        padding-top: 2em;
+        width: 60%;
+    }
+    .promote-heading {
+        font-size: $font-size-h2;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .promote-media {
+        display: none;
+    }
+    .promote-body {
+        font-size: .9em;
+        padding: 0 0 4em 0;
+        width: 100%;
+        .btn {
+            font-size: 1em;
+        }
+    }
+    .promote-heading {
+        font-size: $font-size-h3;
+    }
+}

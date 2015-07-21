@@ -1,0 +1,15 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Brand colors for use across theme.
+$gray-new: #f4f7f9 !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font-size-very-small: ceil(($font-size-base * 0.6)) !default; // ~10px

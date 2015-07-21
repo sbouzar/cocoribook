@@ -1,0 +1,77 @@
+//
+// Search
+// --------------------------------------------------
+
+.search-form {
+
+	background: $body-bg;
+	height: auto;
+	@include opacity(1);
+	padding-top: 1em;
+	position: absolute;
+	-webkit-transition:all 0.40s linear;
+	-moz-transition:all 0.40s linear;
+	-o-transition:all 0.40s linear;
+	transition:all 0.40s linear;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+	&.closed{
+	    @include opacity(0);
+		top: -200px;
+	}
+
+	.container {
+		position: relative;
+  		padding: 0 65px 0 15px;
+	}
+
+	.form-group {
+		position: relative;
+		button[type=submit] {
+			background: none;
+			border: none;
+			color: $brand-success;
+			font-size: 1.7em;
+			padding: .15em .5em;
+			position: absolute;
+			right: 0;
+			top: 0;
+			&:hover,
+			&:focus {
+	    		@include opacity(.65);
+	    		outline: 0;
+			}			
+		}
+	}
+
+	.form-control{
+		border-color: $brand-success;
+		box-shadow: none;
+		padding-right: 3em;
+		&:focus{
+			box-shadow: 0 0 0 1px $brand-success;
+			outline: 0;
+		}
+
+	}
+
+	.close-search {
+		border: 2px solid $brand-success;
+		border-radius: 50%;
+		color: $brand-success;
+		cursor: pointer;
+		font-size: 1.3em;
+		line-height: 0;
+		padding: .3em .32em;
+		position: absolute;
+		right: 15px;
+		top: 4px;
+
+		&:hover,
+		&:focus {
+    		@include opacity(.65);
+		}
+
+	}
+}

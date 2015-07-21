@@ -1,0 +1,17 @@
+.table {
+    
+    th.qty {
+        width: 10%;
+    }
+    
+    .bg-info {
+        color: #fff;
+        background-color: $brand-success;
+    }
+    
+    .cart-table th,
+    .cart-table td {
+        text-align: center;
+    }
+    
+}

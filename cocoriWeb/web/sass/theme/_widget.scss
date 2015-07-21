@@ -1,0 +1,31 @@
+//
+// Widget
+// --------------------------------------------------
+
+.widget-heading {
+    font-size: $font-size-h3;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+aside > .widget-heading:first-child {
+    margin-top: 0;
+}
+
+.widget {
+    margin-bottom: 2em;
+    font-size: $font-size-small;
+
+    .media-left {
+        max-width: 20%;
+        width: 20%;
+    }
+
+    .media-object {
+        border-radius: .3em;
+        @include box-shadow(-.1em -.1em 1em rgba(0,0,0,.5));
+        max-width: 100%;
+        width: 100%;
+    }
+    
+}
